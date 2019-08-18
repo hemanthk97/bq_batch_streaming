@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test
+spec:
+  containers:
+    - name: test
+      image: hemanthk0208/bq:v1
+      imagePullPolicy: Always
+      command: [ "python", "test2.py" ]
+  restartPolicy: Never
